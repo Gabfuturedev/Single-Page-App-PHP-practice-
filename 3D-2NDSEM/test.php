@@ -181,6 +181,7 @@
                     'box3' => 'Description for ROOM 3.',
                     'box4' => 'Description for ROOM 4.',
                 ];
+                
 
                 echo "<H3>$descriptions[$boxId]</H3>";
             }

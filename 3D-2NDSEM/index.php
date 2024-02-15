@@ -18,7 +18,11 @@
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
             padding: 10px;
+            background-color: #faae88;
             
+        }.nav:hover{
+            font-size: 20px;
+            transition: 0.5s ease-out;
         }
 
         .container {
@@ -26,27 +30,31 @@
             width: 100%;
             display: flex;
             position: relative;
-            border: 1px solid;
+           
         }
 
         .products {
             height: 100%;
             width: 60%;
-            border: 1px solid;
+            
             display: flex;
             position: relative;
            
             justify-content: space-between;
             padding: 10px;
             color: white;
+            flex-wrap: wrap;
         }
 
         .des {
             height: 100%;
             width: 27%;
-            border: 1px solid;
+            
             top: 0;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 30px;
            
       
         }
@@ -73,11 +81,21 @@
             position: absolute;
             bottom: 0;
             right: 0;
-        }
+        }a{
+        color: white;
+        border: 1px solid black;
+        text-decoration: none;
+        background-color: orange;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }body{
+        background-color: #FDDCCE;
+    }
     </style>
 </head>
 <body>
     <?php include("nav.php");?>
+
     
     <?php
     if(isset($_GET["nav"])) {
